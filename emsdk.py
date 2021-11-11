@@ -113,7 +113,7 @@ else:
 
 ARCH = 'unknown'
 # platform.machine() may return AMD64 on windows, so standardize the case.
-machine = platform.machine().lower()
+machine = 'x86_64'
 if machine.startswith('x64') or machine.startswith('amd64') or machine.startswith('x86_64'):
   ARCH = 'x86_64'
 elif machine.endswith('86'):
